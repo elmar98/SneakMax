@@ -1,0 +1,20 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-main: "IntroBook", sans-serif;
+  --font-second: "IntroRegular", sans-serif;
+  --content-width: 1180px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --middle-book: 400 16px / 140% var(--font-main);
+
+  // colors
+  --white-color: #fff;
+  --bg-color: #484283;
+  --accent-color: #f14f4f;
+  --text-color: #444b58;
+  --small-text-color: #dbbba9;
+  --sec-bg-color: #fff4ee;
+  --gray-color: #b2b5bb;
+}

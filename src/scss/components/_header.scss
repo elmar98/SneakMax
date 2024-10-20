@@ -1,0 +1,117 @@
+// ваш код
+.header {
+  padding: 20px 0 100px;
+  background-color: var(--bg-color);
+  &__top {
+    position: relative;
+    @include flex-all-sb;
+    padding-bottom: 20px;
+    &::after {
+      @include pseudo;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 1px;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  &__logo-block {
+    max-width: 145px;
+  }
+
+  &__logo {
+    display: block;
+  }
+
+  &__top-right {
+    @include flex-all-center;
+  }
+
+  &__nav {
+    margin-right: 40px;
+    .nav {
+      &__list {
+        display: flex;
+        gap: 40px;
+      }
+
+      &__item {
+      }
+
+      &__link {
+        display: inline-block;
+        font-size: 14px;
+        color: var(--white-color);
+      }
+    }
+  }
+
+  &__hero {
+    position: relative;
+    padding-top: 100px;
+    z-index: 5;
+  }
+
+  &__decor {
+    position: absolute;
+    top: 150px;
+    left: 140px;
+    font-weight: 700;
+    font-size: 200px;
+    color: rgba(255, 255, 255, 0.12);
+    z-index: -1;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+    max-width: 580px;
+    color: var(--white-color);
+    @include mainTitle;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 40px;
+    line-height: 1.4;
+    color: var(--white-color);
+  }
+}
+.cart {
+  position: relative;
+  &__btn {
+    border: 1px solid transparent;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: var(--white-color);
+    cursor: pointer;
+  }
+
+  &__text {
+    margin-right: 10px;
+  }
+
+  &__icon-block {
+    display: flex;
+    align-items: center;
+  }
+
+  &__count {
+    position: absolute;
+    left: 82px;
+    top: 4px;
+    background-color: var(--accent-color);
+    border-radius: 100%;
+    padding: 3px 6px;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 18.42px;
+    fill: var(--white-color);
+  }
+}
