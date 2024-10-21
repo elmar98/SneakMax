@@ -9,121 +9,26 @@
       </p>
 
       <form class="quiz-form" method="POST">
-        <div class="quiz__questions">
-          <div class="quiz-question">
-            <h3 class="quiz-question__title">Какой тип кроссовок рассматриваете?</h3>
-            <!-- Type -->
-            <div class="quiz-question-type">
-              <ul class="quiz-question__answers list-reset">
-                <li class="quiz-question__item">
-                  <img class="quiz-question__item-image" src="img/quiz/1.jpg" alt="Крассовки">
-                  <label class="custom-checkbox quiz-question__label">
-                    <input type="checkbox" class="custom-checkbox__field quiz-question__answer" data-valid="false"
-                      name="type" value="кеды">
-                    <span class="custom-checkbox__content">кеды</span>
-                  </label>
-                </li>
-                <li class="quiz-question__item">
-                  <img class="quiz-question__item-image" src="img/quiz/1.jpg" alt="Крассовки">
-                  <label class="custom-checkbox quiz-question__label">
-                    <input type="checkbox" class="custom-checkbox__field quiz-question__answer" data-valid="false"
-                      name="type" value="кеды">
-                    <span class="custom-checkbox__content">кеды</span>
-                  </label>
-                </li>
-                <li class="quiz-question__item">
-                  <img class="quiz-question__item-image" src="img/quiz/1.jpg" alt="Крассовки">
-                  <label class="custom-checkbox quiz-question__label">
-                    <input type="checkbox" class="custom-checkbox__field quiz-question__answer" data-valid="false"
-                      name="type" value="кеды">
-                    <span class="custom-checkbox__content">кеды</span>
-                  </label>
-                </li>
-                <li class="quiz-question__item">
-                  <img class="quiz-question__item-image" src="img/quiz/1.jpg" alt="Крассовки">
-                  <label class="custom-checkbox quiz-question__label">
-                    <input type="checkbox" class="custom-checkbox__field quiz-question__answer" data-valid="false"
-                      name="type" value="кеды">
-                    <span class="custom-checkbox__content">кеды</span>
-                  </label>
-                </li>
-                <li class="quiz-question__item">
-                  <img class="quiz-question__item-image" src="img/quiz/1.jpg" alt="Крассовки">
-                  <label class="custom-checkbox quiz-question__label">
-                    <input type="checkbox" class="custom-checkbox__field quiz-question__answer" data-valid="false"
-                      name="type" value="кеды">
-                    <span class="custom-checkbox__content">кеды</span>
-                  </label>
-                </li>
-                <li class="quiz-question__item">
-                  <img class="quiz-question__item-image" src="img/quiz/1.jpg" alt="Крассовки">
-                  <label class="custom-checkbox quiz-question__label">
-                    <input type="checkbox" class="custom-checkbox__field quiz-question__answer" data-valid="false"
-                      name="type" value="кеды">
-                    <span class="custom-checkbox__content">кеды</span>
-                  </label>
-                </li>
-              </ul>
+
+
+        <!--<div class="last-question">
+          <div class="last-question__form">
+            <h3 class="last-question__title">Получить предложение</h3>
+            <p class="last-question__descr">Получите подборку подходящих для вас моделей на почту</p>
+            <div class="last-question__form-block">
+              <input type="text" class="input last-question__input" placeholder="Ваше имя" required>
+              <input type="email" class="input last-question__input" placeholder="E-mail" required>
             </div>
-            <!-- Size -->
-            <div class="quiz-question-size">
-              <ul class="quiz-question__answers list-reset">
-                <li class="quiz-question__item">
-                  <label class="custom-checkbox quiz-question__label">
-                    <input type="checkbox" class="custom-checkbox__field quiz-question__answer" data-valid="false"
-                      name="type" value="кеды">
-                    <span class="custom-checkbox__content">менее 36</span>
-                  </label>
-                </li>
-                <li class="quiz-question__item">
-                  <label class="custom-checkbox quiz-question__label">
-                    <input type="checkbox" class="custom-checkbox__field quiz-question__answer" data-valid="false"
-                      name="type" value="кеды">
-                    <span class="custom-checkbox__content">36-38</span>
-                  </label>
-                </li>
-                <li class="quiz-question__item">
-                  <label class="custom-checkbox quiz-question__label">
-                    <input type="checkbox" class="custom-checkbox__field quiz-question__answer" data-valid="false"
-                      name="type" value="кеды">
-                    <span class="custom-checkbox__content">39-41</span>
-                  </label>
-                </li>
-                <li class="quiz-question__item">
-                  <label class="custom-checkbox quiz-question__label">
-                    <input type="checkbox" class="custom-checkbox__field quiz-question__answer" data-valid="false"
-                      name="type" value="кеды">
-                    <span class="custom-checkbox__content">42-44</span>
-                  </label>
-                </li>
-                <li class="quiz-question__item">
-                  <label class="custom-checkbox quiz-question__label">
-                    <input type="checkbox" class="custom-checkbox__field quiz-question__answer" data-valid="false"
-                      name="type" value="кеды">
-                    <span class="custom-checkbox__content">45 и больше</span>
-                  </label>
-                </li>
-              </ul>
-              <div class="quiz-question-size__image">
-                <img src="img/quiz/big-image.jpg" alt="Крассовки">
+            <button type='button' class='btn btn-reset btn--primary last-question__btn'>Получить</button>
+            <div class="last-question__decorate">
+              <div class="last-question__decorate-res">
+                <span>Отправлено</span>
               </div>
-            </div>
-            <!-- message -->
-            <div class="quiz-question-message">
-              <ul class="quiz-question__answers list-reset">
-                <li class="quiz-question__item">
-                  <label class="quiz-question__label">
-                    <textarea class="quiz-question__message" placeholder="Введите сообщение"></textarea>
-                  </label>
-              </ul>
-            </div>
-            <div class="quiz-bottom">
-              <div class="quiz-question__count">1 из 3</div>
-              <button type="button" class="btn btn-reset btn--thirty quiz-question__btn" data-next-btn="">Следующий
-                шаг</button>
+              <img class="last-question__decorate--screen" src="img/phone/screen.png" alt="" aria-hidden="true">
+              <img class="last-question__decorate--phone" src="img/phone/phone.png" alt="" aria-hidden="true">
             </div>
           </div>
-        </div>
+        </div>-->
       </form>
     </div>
   </div>
