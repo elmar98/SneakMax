@@ -169,3 +169,35 @@ input[type="number"] {
 .title {
   @include secondTitle;
 }
+
+.about,
+.quiz,
+.catalog,
+.team,
+.faq {
+  margin-bottom: 60px;
+}
+
+// Animations
+// Fade
+@keyframes fadeIn {
+  0% {
+    transform: translateY(-60px);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
